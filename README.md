@@ -8,3 +8,4 @@ Usage:
 ## TODO:
 * setup.py
 * `add` to add some time without log
+* remove fire dependency
