@@ -18,7 +18,7 @@ def humanize(amount):
     for i, interval in enumerate(working_intervals):
         quantity, amount = divmod(amount, interval)
         parts.append(f'{quantity}{intervals_names[i]}')
-    return " ".join([i for i in parts if i[0] != '0'])
+    return " ".join([i for i in parts if (i[0] != '0' or i[1] == intervals_names[-1])])
 
 
 def dehumanize(string):
