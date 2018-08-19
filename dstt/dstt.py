@@ -100,11 +100,8 @@ class TimeTracker:
         self._read()
 
         def _this_or_last():
-            return ["This", "Last"][
-                int(
-                    'finish' in self._data.get('log', [])[-1]
-                )
-            ]
+            return 'Last' if int(
+                'finish' in self._data.get('log', [])[-1]) else 'This'
         try:
             return (f"You've worked in total:\n{str(self)}\n\n" +
                     f"{_this_or_last()} log:\n" +
