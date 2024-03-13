@@ -14,7 +14,7 @@ setup(
             ['dstt = dstt.dstt:cli']
     },
     install_requires=[
-        'fire==0.1.3'
+        'fire==0.6.0'
     ],
     requires=['python (>= 3.6)'],
     license='WTFPL'
